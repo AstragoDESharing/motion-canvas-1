@@ -15,6 +15,6 @@ export default makeProject({
   scenes: [intro, ball],
   background: '#141414',
 
-  audio: audio,
+  // audio: audio,
 });
  
