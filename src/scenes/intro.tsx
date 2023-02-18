@@ -1,7 +1,7 @@
 import { makeScene2D } from "@motion-canvas/2d/lib/scenes";
 import { createRef } from "@motion-canvas/core/lib/utils";
 import { Title } from "../components/title";
-import { waitFor } from "@motion-canvas/core/lib/flow";
+import { waitFor, waitUntil } from "@motion-canvas/core/lib/flow";
 
 
 export default makeScene2D(function* (view) {
@@ -15,6 +15,6 @@ export default makeScene2D(function* (view) {
 
     // Play Intro
     yield* intro().fadeIn();
-    yield* waitFor(7.1);
-    yield* intro().fadeOut();
+    yield* waitUntil("Intro End");
+    // yield* intro().fadeOut();
 });
