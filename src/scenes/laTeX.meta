@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "seed": 2943123144,
+  "timeEvents": [
+    {
+      "name": "Rotate",
+      "targetTime": 1.0143749999999994
+    },
+    {
+      "name": "Rotate back",
+      "targetTime": 3.9443923611111114
+    },
+    {
+      "name": "Continue",
+      "targetTime": 6.9080208333333335
+    }
+  ]
+}
