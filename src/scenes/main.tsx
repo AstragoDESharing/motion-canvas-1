@@ -1,7 +1,7 @@
 import { makeScene2D } from "@motion-canvas/2d/lib/scenes";
 import { Circle, Layout } from "@motion-canvas/2d/lib/components";
 import { createRef } from "@motion-canvas/core/lib/utils";
-import { all, waitFor } from "@motion-canvas/core/lib/flow";
+import { all, waitFor, waitUntil } from "@motion-canvas/core/lib/flow";
 import { Text } from "@motion-canvas/2d/lib/components/Text";
 import { chain } from "@motion-canvas/core/lib/flow/chain";
 import { Node } from "@motion-canvas/2d/lib/components/Node";
@@ -31,7 +31,7 @@ export default makeScene2D(function* (view) {
     myCircle().fill("#00ff00", 1).to("#0000ff", 1).to("#ff0000", 1)
   );
 
-  yield* waitFor(0.5);
+  yield* waitUntil("Get Fat");
 
   // Scale Circle
   yield* chain(

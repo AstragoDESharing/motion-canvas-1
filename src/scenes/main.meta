@@ -1,4 +1,10 @@
 {
   "version": 1,
-  "seed": 3598712103
+  "seed": 3598712103,
+  "timeEvents": [
+    {
+      "name": "Get Fat",
+      "targetTime": 4.257022569444446
+    }
+  ]
 }
